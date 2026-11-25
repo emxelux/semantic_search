@@ -1,0 +1,192 @@
+ABSTRACT
+This project proposes the design and implementation of a web-based Blood Donor
+Registration and Information Management System for Muslim Hospital, Saki. The system will
+provide a structured platform for registering voluntary blood donors, maintaining donor profiles,
+recording verified blood group information and donation history, and retrieving donor records
+when required. The study is motivated by information-management challenges that can arise
+when records are held in paper files or disconnected systems, including slow retrieval, duplicate
+entries, outdated contact details, and difficulty preparing summaries. The hospital’s actual
+workflow and challenges will first be established through approved requirements gathering.
+The project will adopt an iterative system-development approach involving requirements
+gathering, analysis, design, implementation, testing, and documentation. Data will be collected
+through interviews, observation, and review of approved blank forms, subject to hospital
+permission. The application will provide authorised staff with secure access to donor records and
+administrative functions. A donor-facing registration feature may also be provided if approved.
+The system will support information management only; clinical screening, eligibility decisions,
+blood collection, laboratory testing, cross-matching, and transfusion decisions will remain the
+responsibility of qualified health professionals. The expected outcome is a usable, secure, and
+maintainable application for organising and retrieving donor information.
+CHAPTER ONE
+INTRODUCTION
+1.1 Background to the Study
+Blood is an essential healthcare resource and may be required during emergencies, childbirth
+complications, surgery, severe anaemia, and the treatment of certain medical conditions. Hospitals
+need reliable ways to maintain information about potential and previous donors and contact them
+when necessary. Organised donor records can help authorised personnel retrieve relevant details,
+communicate with registered donors, and review donation history.
+Donor information may be maintained in paper registers, spreadsheets, or separate files. As
+records increase, searching by blood group, updating contact details, identifying duplicates, and
+reviewing donation dates may require manual effort. A web-based system can centralise approved
+records in a controlled database and make them accessible to authorised users through a browser.
+For Muslim Hospital, Saki, the proposed system will be designed around the hospital’s verified
+workflow and will not replace clinical or blood-bank procedures.
+1.2 Statement of the Problem
+Effective donor information management depends on records being accurate, current,
+organised, and retrievable. Where information is stored manually or across separate records, staff
+may experience delays locating contacts, difficulty identifying duplicate entries, and challenges
+updating details or reviewing donation history. This project addresses the need, if confirmed by
+preliminary investigation, for a single web-based platform to support donor registration and
+information management at Muslim Hospital, Saki. The current process will be examined before
+requirements are finalised.
+CHAPTER ONE
+INTRODUCTION (CONTINUED)
+1.3 Aim and Objectives of the Study
+The aim is to design and implement a web-based Blood Donor Registration and Information
+Management System for Muslim Hospital, Saki.
+The specific objectives are to:
+• examine the hospital’s existing process for registering donors and maintaining donor
+information;
+• identify the functional, security, and operational requirements;
+• design a centralised database for approved donor details, blood group information, and donation
+records;
+• develop a web application for registration, record updating, searching, and authorised
+administration;
+• implement access control, input validation, and basic data-protection measures; and
+• test the system against its functional and usability requirements.
+1.4 Research Questions
+• How is donor information currently collected, stored, updated, and retrieved at Muslim
+Hospital, Saki?
+• What functional and security requirements should the proposed system satisfy?
+• How can a centralised database improve the organisation and retrieval of donor information?
+• To what extent will the developed system meet its functional and usability requirements?
+1.5 Significance of the Study
+The system is expected to give the hospital an organised means of maintaining donor
+information and retrieving records. Authorised staff may spend less time searching and may
+identify records matching approved criteria more efficiently. Donors may benefit from a clearer
+registration process and an approved means of updating contact details. The project may also
+serve as a reference for students and researchers. Benefits will depend on staff adoption, data
+quality, infrastructure, and compliance with hospital procedures.
+1.6 Scope of the Study
+The study will cover donor registration; capture of approved personal and contact
+information; recording blood group information as supplied or verified under hospital procedures;
+secure staff login; role-based administration; viewing and updating donor profiles; authorised
+donation-history entries; basic summaries and reports; testing; and documentation. It is limited to
+Muslim Hospital, Saki. The system will not assess medical fitness, diagnose conditions, conduct
+laboratory tests, perform blood matching, manage transfusion, or independently declare a person
+eligible to donate. Such decisions remain with qualified personnel.
+1.7 Limitations of the Study
+Possible limitations include restricted access to institutional records, limited time for
+interviews and testing, unreliable electricity or network access, and user-adoption challenges.
+These will be managed through approved data collection, synthetic test records, user orientation,
+and documentation. Real donor information will not be used for demonstrations without
+authorisation.
+CHAPTER TWO
+LITERATURE REVIEW
+2.1 Concept of Blood Donor Information Management
+Blood donor information management involves collecting, organising, updating, retrieving,
+and protecting information about people who have expressed interest in donating blood or have
+previously donated. Administrative records may include a donor’s name, contact details, blood
+group where verified, registration date, and donation history. These records support
+communication and coordination but do not replace clinical screening or laboratory procedures.
+2.2 Manual and Computer-Based Record Management
+Manual record systems are familiar and may require little initial technical investment.
+However, as records grow, paper-based processes can make searching, updating, backing up, and
+reporting more difficult. Computer-based systems can support faster retrieval, consistent data
+entry, controlled access, and routine backups. These benefits depend on suitable database design,
+staff training, reliable infrastructure, and procedures for correcting inaccurate information.
+2.3 Web-Based Information Systems
+A web-based information system is accessed through a browser and commonly consists of a
+presentation interface, application logic, and a database. It enables authorised users to access
+functions from different devices without installing a separate desktop application. A
+well-designed system should validate submitted information, protect user accounts, restrict
+functions according to roles, and maintain records of important administrative actions.
+2.4 Data Security and Privacy in Healthcare Systems
+Donor information is personal information and must be handled confidentially. The proposed
+system will collect only information required for the approved purpose. Security measures will
+include authenticated access, role-based permissions, password hashing, input validation, secure
+configuration, database backups, and restricted administrative functions. The project will be
+guided by the Nigeria Data Protection Act 2023 and hospital policies. Hospital approval and any
+required ethics or privacy review will be obtained before real donor information is collected or
+processed.
+2.5 Review of Related Systems and Identified Gap
+Digital registration and record-management systems demonstrate the usefulness of structured
+databases, search functions, and controlled administrative access. A system for a particular
+hospital must reflect its workflow, user roles, terminology, and operating conditions. This project
+will develop a locally tailored solution for Muslim Hospital, Saki. The specific gap will be
+established through requirements gathering and will concern the hospital’s verified need for a
+simple, secure platform supporting donor registration and information management.
+CHAPTER THREE
+SYSTEM ANALYSIS AND METHODOLOGY
+3.1 Research and Development Method
+The project will use an applied, iterative system-development approach. Requirements will
+be gathered and reviewed with intended users, after which the system will be analysed, designed,
+implemented, tested, and documented. Feedback obtained during development will be used to
+refine the application before final evaluation.
+3.2 Methods of Data Collection
+Subject to permission, primary information will be obtained through:
+• Interviews: discussions with relevant hospital personnel about donor registration, record
+retrieval, updating, and reporting.
+• Observation: observation of approved workflows to understand task sequences and the
+information handled.
+• Document review: examination of approved blank registration forms or templates, where
+access is granted.
+Only information necessary for defining system requirements will be collected. Personal donor
+records will not be copied unless the hospital grants explicit approval and safeguards are in place.
+3.3 Analysis of the Proposed System
+The proposed system will provide donor-facing registration functions, where approved, and
+staff-facing management functions. Exact roles and functions will be confirmed during
+requirements gathering.
+Donor functions: submit a registration form containing approved details; receive confirmation of
+submission; and request correction or updating of contact information through the approved
+process.
+Authorised staff functions: sign in securely; review, verify, approve, update, or deactivate donor
+records according to hospital policy; search records using approved fields such as name, blood
+group, or location; record authorised donation-related entries; and view or export basic reports.
+3.4 Proposed System Architecture and Tools
+The system will use a three-layer web architecture. The presentation layer will provide
+responsive pages for donors and staff. The application layer will process requests, validate data,
+enforce permissions, and apply system rules. The data layer will store donor profiles, user
+accounts, and authorised donation-related records. A suitable implementation may use HTML,
+CSS, and JavaScript for the interface; Python with Django or FastAPI for the backend; and
+PostgreSQL or MySQL for the database. Final technology and hosting choices will be
+documented in the project report.
+CHAPTER THREE
+SYSTEM ANALYSIS AND METHODOLOGY (CONTINUED)
+3.5 Functional and Non-Functional Requirements
+Functional requirements will include donor registration, staff authentication, role-based
+administration, donor-record management, search and filtering, authorised donation-history
+recording, and report generation. Non-functional requirements will include usability, reasonable
+response time, maintainability, availability, data integrity, privacy, and security. The application
+should support modern browsers and adapt to desktop and mobile screens.
+3.6 Database Design
+The database is expected to contain related tables such as Donors, Users, Roles, Donations,
+and AuditLogs. Each donor will have a unique system identifier to reduce duplicate records.
+Donors will store approved profile and contact fields; Donations will link authorised donation
+entries to a donor; and Users and Roles will control staff access. Audit information will record
+important administrative changes where appropriate. The final schema will be refined after
+requirements gathering.
+3.7 Testing and Evaluation
+Unit testing will check individual functions such as form validation and search. Integration
+testing will verify communication between the interface, backend, and database. System testing
+will examine complete workflows, including registration, staff login, record updates, and report
+generation. User acceptance testing will be conducted with selected intended users where the
+hospital permits. Synthetic records will be used unless approved access to real data is granted.
+Defects identified will be corrected and retested.
+3.8 Ethical, Privacy, and Security Considerations
+Permission will be sought from the appropriate hospital authority before interviews,
+workflow observation, or use of institutional information. Interview participation will be
+voluntary. Donor information will be confidential and accessible only to authorised users; donor
+contact details will not be publicly searchable. Any public-facing registration feature will submit
+information for staff review and will not establish clinical eligibility. Consent wording, data
+retention, access rights, and correction or deletion procedures will be agreed with the hospital and
+aligned with applicable law and policy.
+3.9 Expected Results
+The project is expected to produce a working web application, a structured database, user and
+technical documentation, and test results. The system should demonstrate that donor information
+can be registered, stored, searched, updated, and managed through authorised access. The final
+report will evaluate how far the implemented features satisfy the requirements established during
+the study.
+3.10 Work Plan and Estimated Resources
+Work plan: Week 1—requirements gathering; Week 2—system analysis and design; Weeks
+3–5—implementation; Week 6—testing and refinement; Week 7—documentation and
+submission.
